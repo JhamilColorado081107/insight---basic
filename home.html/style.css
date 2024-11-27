@@ -369,6 +369,54 @@ text-align: center;
 .projects .projects__card:hover .projects__text{
   display: block;
 }
+@media screen and (max-width:500px){
+  .projects .projects__wrapper{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-gap: 5rem;
+  }
+  .projects .projects__card::before{
+    content:"";
+    width: 0%;
+    height: 0%
+  }
+  .projects .projects__text{
+    display: block;
+  }
+}
+/* FOOTER */
+.footer{
+  background-color:var(--dark);
+}
+.footer .footer__wrapper{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  color:var(--light);
+}
+.footer .footer__social{
+  display:flex;
+  justify-content:space-between;
+  gap:3rem;
+}
+.footer .footer__social a{
+  color:var(--light);
+}
+@media screen and (max-width:500px){
+  .footer .footer__wrapper{
+    display:flex;
+    flex-direction:column;
+    gap:1.5rem;
+    padding:3rem;
+  }
+  .footer .footer__wrapper img{
+    display:flex;
+    order:-1;
+  }
+  .footer .footer__social{
+    gap:4rem;
+  }
+}
 /* REPEATABLE PATTERN */
   :root{
     --primary: #fb4d3d;
